@@ -5,24 +5,23 @@ public class Main {
         String[] names = {"Sjaak", "Sjimmy", "Sjonny"};
 
         // implementeer de countdown met een array three...two...one... boom!
-        System.out.println();
-        System.out.println();
-        System.out.println();
+        System.out.println(countdown[2]);
+        System.out.println(countdown[1]);
+        System.out.println(countdown[0]);
         System.out.println("boom!");
 
         // implementeer een for loop die alle namen in de array "names" print. Houd er rekening mee dat de array een andere length kan hebben dan 3.
-        //for(;;) {
-
-        //}
+        for (int i = 0; i < names.length; i++) {
+            System.out.println(names[i]);
+        }
 
         // implementeer een for loop die de twee arrays combineerd. De output moet zijn:
         // oneSjaak
         // twoSjimmy
         // threeSjonny
 
-        //for(;;) {
-
-        //}
+        for(int i =0; i < countdown.length && i < names.length; i++) {
+            System.out.println(countdown[i] + names[i]);
+        }
     }
-
 }
