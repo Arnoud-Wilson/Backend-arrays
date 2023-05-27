@@ -43,6 +43,8 @@ public class Main {
             }
         }
 
+        cars.remove("Nissan");
+        System.out.println(cars);
 
     }
 }
