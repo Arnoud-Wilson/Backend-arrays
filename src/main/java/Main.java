@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -23,5 +25,24 @@ public class Main {
         for(int i =0; i < countdown.length && i < names.length; i++) {
             System.out.println(countdown[i] + names[i]);
         }
+
+        ArrayList<String> cars = new ArrayList<>();
+        cars.add("Seat");
+        cars.add("Peugeot");
+        cars.add("Volkswagen");
+        cars.add("Nissan");
+        cars.add("Renault");
+
+        System.out.println(cars);
+
+        for (int i = 0; i < cars.size(); i++) {
+            System.out.println(cars.get(i));
+
+            if (cars.get(i).equals("Renault")) {
+                System.out.println(cars.get(i));
+            }
+        }
+
+
     }
 }
